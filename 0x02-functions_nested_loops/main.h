@@ -4,7 +4,7 @@ void print_alphabet_x10(void);
 int _islower(int c);
 int _isalpha(int c);
 int  print_sign(int n);
-void _abs(int);
+int _abs(int);
 void print_last_digit(int);
 void _24_hours(void);
 void times_table(void);
