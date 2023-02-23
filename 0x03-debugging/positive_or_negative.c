@@ -1,9 +1,3 @@
-#include <stdlib.h>
-
-#include <time.h>
-
-#include <stdio.h>
-
 #include "main.h"
 
 /**
@@ -28,5 +22,5 @@ void positive_or_negative(int i)
 	{
 		printf("%d is zero\n", i);
 	}
-	return (positive_or_negative(i));
+
 }
