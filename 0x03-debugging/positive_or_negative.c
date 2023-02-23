@@ -1,23 +1,21 @@
 #include "main.h"
-
 /**
- * positive_or_negative - prints if number is positive, negative or zero
+ * positive_or_negative - tells if the number is positive, negative or zero
  * @i: the number to be checked
- * Return: Always (success)
+ * Return: void
  */
 void positive_or_negative(int i)
 {
-	if (i > 0)
+	if (i < 0)
 	{
-		printf("%i is positive\n", i);
+	printf("%d is negative\n", i);
 	}
-	else if (i == 0)
+	else if (i > 0)
 	{
-		printf("%i is zero\n", i);
+		printf("%d is positive\n", i);
 	}
 	else
 	{
-		printf("%i is negative\n", i);
+		printf("%d is zero\n", i);
 	}
-
 }
