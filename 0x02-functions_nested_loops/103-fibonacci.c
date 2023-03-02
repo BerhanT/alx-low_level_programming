@@ -20,6 +20,6 @@ int main(void)
 		b = c - b;
 		++i;
 	}
-	printf("%ld", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
