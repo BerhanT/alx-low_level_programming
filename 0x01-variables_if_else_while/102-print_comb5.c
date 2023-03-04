@@ -9,22 +9,36 @@
 
 int main(void)
 {
-	int n1, n2;
+	int n1 = 0, n2;
 
-	for (n1 = 0; n1 <= 98; n1++)
+	int a, b, c, d;
+
+	while (n1 <= 98)
 	{
-		for (n2 = n1 + 1; n2 <= 99; n2++)
+		a = (n1 / 10 + '0');
+		b = (n1 % 10 + '0');
+		n2 = 0;
+		while (n2 <= 99)
 		{
-			putchar((n1 / 10) + '0');
-			putchar((n1 % 10) + '0');
-			putchar(' ');
-			putchar((n2 / 10) + '0');
-			putchar((n2 % 10) + '0');
-			if (n1 == 98 && n2 == 99)
-				continue;
-			putchar(',');
-			putchar(' ');
+			c = (n2 / 10 + '0');
+			d = (n2 % 10 + '0');
+
+			if (n1 < n2)
+			{
+				putchar(a);
+				putchar(b);
+				putchar(' ');
+				putchar(c);
+				putchar(d);
+				if (n1 != 98)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			n2++;
 		}
+		n1++;
 	}
 	putchar('\n');
 	return (0);
