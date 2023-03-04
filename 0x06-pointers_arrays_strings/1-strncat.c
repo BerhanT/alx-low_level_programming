@@ -5,7 +5,7 @@
  * @src: the first string
  * @dest: the second string
  * @n: byte
- * Retun: dest
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -25,4 +25,3 @@ char *_strncat(char *dest, char *src, int n)
 	dest[i] = '\0';
 	return (dest);
 }
-

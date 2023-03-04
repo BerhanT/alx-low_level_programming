@@ -17,7 +17,7 @@ void reverse_string(char *n)
 	}
 	i--;
 
-	for (j = 0; j < i; j++; i--)
+	for (j = 0; j < i; j++, i--)
 	{
 		temp = *(n + j);
 		*(n + j) = *(n + i);
@@ -37,10 +37,12 @@ void reverse_string(char *n)
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int over = 0, i = 0, j = 0, d = 0;
-	int v1 = 0, v2 = 0 temp_t = 0;
+	int v1 = 0, v2 = 0, temp_t = 0;
 
 	while (*(n1 + i) != '\0')
 		i++;
+	while (*(n2 + j) != '\0')
+		j++;
 	i--;
 	j--;
 	if (j >= size_r || i >= size_r)
